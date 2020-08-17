@@ -60,12 +60,12 @@
 <span class="sourceLineNo">052</span>                        if(PicoJobsPlugin.isLegacy()) {<a name="line.52"></a>
 <span class="sourceLineNo">053</span>                                int itemData = category.getInt("item-data");<a name="line.53"></a>
 <span class="sourceLineNo">054</span>                                if(itemData == -1) {<a name="line.54"></a>
-<span class="sourceLineNo">055</span>                                        builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()));<a name="line.55"></a>
+<span class="sourceLineNo">055</span>                                        builder = new ItemBuilder(Material.matchMaterial(category.getString("material")));<a name="line.55"></a>
 <span class="sourceLineNo">056</span>                                } else {<a name="line.56"></a>
-<span class="sourceLineNo">057</span>                                        builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()), 1, (byte)itemData);<a name="line.57"></a>
+<span class="sourceLineNo">057</span>                                        builder = new ItemBuilder(Material.matchMaterial(category.getString("material")), 1, (byte)itemData);<a name="line.57"></a>
 <span class="sourceLineNo">058</span>                                }<a name="line.58"></a>
 <span class="sourceLineNo">059</span>                        } else {<a name="line.59"></a>
-<span class="sourceLineNo">060</span>                                builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()));<a name="line.60"></a>
+<span class="sourceLineNo">060</span>                                builder = new ItemBuilder(Material.matchMaterial(category.getString("material")));<a name="line.60"></a>
 <span class="sourceLineNo">061</span>                        }<a name="line.61"></a>
 <span class="sourceLineNo">062</span>                        if(category.getBoolean("enchanted")) builder.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 1);<a name="line.62"></a>
 <span class="sourceLineNo">063</span>                        builder.setName(ChatColor.translateAlternateColorCodes('&amp;', category.getString("item-name")));<a name="line.63"></a>
@@ -92,12 +92,12 @@
 <span class="sourceLineNo">084</span>                        if(PicoJobsPlugin.isLegacy()) {<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                                int itemData = itemConfig.getInt("item-data");<a name="line.85"></a>
 <span class="sourceLineNo">086</span>                                if(itemData == -1) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>                                        builder = new ItemBuilder(Material.getMaterial(itemConfig.getString("material").toUpperCase()));<a name="line.87"></a>
+<span class="sourceLineNo">087</span>                                        builder = new ItemBuilder(Material.matchMaterial(itemConfig.getString("material")));<a name="line.87"></a>
 <span class="sourceLineNo">088</span>                                } else {<a name="line.88"></a>
-<span class="sourceLineNo">089</span>                                        builder = new ItemBuilder(Material.getMaterial(itemConfig.getString("material").toUpperCase()), 1, (byte)itemData);<a name="line.89"></a>
+<span class="sourceLineNo">089</span>                                        builder = new ItemBuilder(Material.matchMaterial(itemConfig.getString("material")), 1, (byte)itemData);<a name="line.89"></a>
 <span class="sourceLineNo">090</span>                                }<a name="line.90"></a>
 <span class="sourceLineNo">091</span>                        } else {<a name="line.91"></a>
-<span class="sourceLineNo">092</span>                                builder = new ItemBuilder(Material.getMaterial(itemConfig.getString("material").toUpperCase()));<a name="line.92"></a>
+<span class="sourceLineNo">092</span>                                builder = new ItemBuilder(Material.matchMaterial(itemConfig.getString("material")));<a name="line.92"></a>
 <span class="sourceLineNo">093</span>                        }<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                        builder.setName(ChatColor.translateAlternateColorCodes('&amp;', itemConfig.getString("name")));<a name="line.94"></a>
 <span class="sourceLineNo">095</span>                        <a name="line.95"></a>
@@ -124,12 +124,12 @@
 <span class="sourceLineNo">116</span>                        if(PicoJobsPlugin.isLegacy()) {<a name="line.116"></a>
 <span class="sourceLineNo">117</span>                                int itemData = category.getInt("item-data");<a name="line.117"></a>
 <span class="sourceLineNo">118</span>                                if(itemData == -1) {<a name="line.118"></a>
-<span class="sourceLineNo">119</span>                                        builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()));<a name="line.119"></a>
+<span class="sourceLineNo">119</span>                                        builder = new ItemBuilder(Material.matchMaterial(category.getString("material")));<a name="line.119"></a>
 <span class="sourceLineNo">120</span>                                } else {<a name="line.120"></a>
-<span class="sourceLineNo">121</span>                                        builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()), 1, (byte)itemData);<a name="line.121"></a>
+<span class="sourceLineNo">121</span>                                        builder = new ItemBuilder(Material.matchMaterial(category.getString("material")), 1, (byte)itemData);<a name="line.121"></a>
 <span class="sourceLineNo">122</span>                                }<a name="line.122"></a>
 <span class="sourceLineNo">123</span>                        } else {<a name="line.123"></a>
-<span class="sourceLineNo">124</span>                                builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()));<a name="line.124"></a>
+<span class="sourceLineNo">124</span>                                builder = new ItemBuilder(Material.matchMaterial(category.getString("material")));<a name="line.124"></a>
 <span class="sourceLineNo">125</span>                        }<a name="line.125"></a>
 <span class="sourceLineNo">126</span>                        if(category.getBoolean("enchanted")) builder.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 1);<a name="line.126"></a>
 <span class="sourceLineNo">127</span>                        builder.setName(ChatColor.translateAlternateColorCodes('&amp;', category.getString("item-name")));<a name="line.127"></a>
@@ -156,12 +156,12 @@
 <span class="sourceLineNo">148</span>                        if(PicoJobsPlugin.isLegacy()) {<a name="line.148"></a>
 <span class="sourceLineNo">149</span>                                int itemData = itemConfig.getInt("item-data");<a name="line.149"></a>
 <span class="sourceLineNo">150</span>                                if(itemData == -1) {<a name="line.150"></a>
-<span class="sourceLineNo">151</span>                                        builder = new ItemBuilder(Material.getMaterial(itemConfig.getString("material").toUpperCase()));<a name="line.151"></a>
+<span class="sourceLineNo">151</span>                                        builder = new ItemBuilder(Material.matchMaterial(itemConfig.getString("material")));<a name="line.151"></a>
 <span class="sourceLineNo">152</span>                                } else {<a name="line.152"></a>
-<span class="sourceLineNo">153</span>                                        builder = new ItemBuilder(Material.getMaterial(itemConfig.getString("material").toUpperCase()), 1, (byte)itemData);<a name="line.153"></a>
+<span class="sourceLineNo">153</span>                                        builder = new ItemBuilder(Material.matchMaterial(itemConfig.getString("material")), 1, (byte)itemData);<a name="line.153"></a>
 <span class="sourceLineNo">154</span>                                }<a name="line.154"></a>
 <span class="sourceLineNo">155</span>                        } else {<a name="line.155"></a>
-<span class="sourceLineNo">156</span>                                builder = new ItemBuilder(Material.getMaterial(itemConfig.getString("material").toUpperCase()));<a name="line.156"></a>
+<span class="sourceLineNo">156</span>                                builder = new ItemBuilder(Material.matchMaterial(itemConfig.getString("material")));<a name="line.156"></a>
 <span class="sourceLineNo">157</span>                        }<a name="line.157"></a>
 <span class="sourceLineNo">158</span>                        builder.setName(ChatColor.translateAlternateColorCodes('&amp;', itemConfig.getString("name")));<a name="line.158"></a>
 <span class="sourceLineNo">159</span>                        <a name="line.159"></a>
@@ -188,12 +188,12 @@
 <span class="sourceLineNo">180</span>                        if(PicoJobsPlugin.isLegacy()) {<a name="line.180"></a>
 <span class="sourceLineNo">181</span>                                int itemData = category.getInt("item-data");<a name="line.181"></a>
 <span class="sourceLineNo">182</span>                                if(itemData == -1) {<a name="line.182"></a>
-<span class="sourceLineNo">183</span>                                        builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()));<a name="line.183"></a>
+<span class="sourceLineNo">183</span>                                        builder = new ItemBuilder(Material.matchMaterial(category.getString("material")));<a name="line.183"></a>
 <span class="sourceLineNo">184</span>                                } else {<a name="line.184"></a>
-<span class="sourceLineNo">185</span>                                        builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()), 1, (byte)itemData);<a name="line.185"></a>
+<span class="sourceLineNo">185</span>                                        builder = new ItemBuilder(Material.matchMaterial(category.getString("material")), 1, (byte)itemData);<a name="line.185"></a>
 <span class="sourceLineNo">186</span>                                }<a name="line.186"></a>
 <span class="sourceLineNo">187</span>                        } else {<a name="line.187"></a>
-<span class="sourceLineNo">188</span>                                builder = new ItemBuilder(Material.getMaterial(category.getString("material").toUpperCase()));<a name="line.188"></a>
+<span class="sourceLineNo">188</span>                                builder = new ItemBuilder(Material.matchMaterial(category.getString("material")));<a name="line.188"></a>
 <span class="sourceLineNo">189</span>                        }<a name="line.189"></a>
 <span class="sourceLineNo">190</span>                        if(category.getBoolean("enchanted")) builder.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 1);<a name="line.190"></a>
 <span class="sourceLineNo">191</span>                        builder.setName(ChatColor.translateAlternateColorCodes('&amp;', category.getString("item-name")));<a name="line.191"></a>

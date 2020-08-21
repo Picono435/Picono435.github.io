@@ -83,40 +83,52 @@
 <span class="sourceLineNo">075</span>                                p.closeInventory();<a name="line.75"></a>
 <span class="sourceLineNo">076</span>                                return;<a name="line.76"></a>
 <span class="sourceLineNo">077</span>                        }<a name="line.77"></a>
-<span class="sourceLineNo">078</span>                        return;<a name="line.78"></a>
-<span class="sourceLineNo">079</span>                }<a name="line.79"></a>
-<span class="sourceLineNo">080</span>                <a name="line.80"></a>
-<span class="sourceLineNo">081</span>                /*<a name="line.81"></a>
-<span class="sourceLineNo">082</span>                 * Status Work Menu Clicking Event<a name="line.82"></a>
-<span class="sourceLineNo">083</span>                 */<a name="line.83"></a>
-<span class="sourceLineNo">084</span>                if(e.getView().getTitle().equals(FileCreator.getGUI().getString("gui-settings.has-work.title"))) {<a name="line.84"></a>
-<span class="sourceLineNo">085</span>                        e.setCancelled(true);<a name="line.85"></a>
-<span class="sourceLineNo">086</span>                        Player p = (Player) e.getWhoClicked();<a name="line.86"></a>
-<span class="sourceLineNo">087</span>                        JobPlayer jp = PicoJobsAPI.getPlayersManager().getJobPlayer(p);<a name="line.87"></a>
-<span class="sourceLineNo">088</span>                        //Job job = jp.getJob();<a name="line.88"></a>
-<span class="sourceLineNo">089</span>                        String action = actionItems.get(e.getCurrentItem());<a name="line.89"></a>
-<span class="sourceLineNo">090</span>                        if(action.equalsIgnoreCase("salary")) {<a name="line.90"></a>
-<span class="sourceLineNo">091</span>                                double salary = jp.getSalary();<a name="line.91"></a>
-<span class="sourceLineNo">092</span>                                if(salary &lt;= 0) {<a name="line.92"></a>
-<span class="sourceLineNo">093</span>                                        p.sendMessage(LanguageManager.getMessage("no-salary", p));<a name="line.93"></a>
-<span class="sourceLineNo">094</span>                                        p.closeInventory();<a name="line.94"></a>
-<span class="sourceLineNo">095</span>                                        return;<a name="line.95"></a>
-<span class="sourceLineNo">096</span>                                }<a name="line.96"></a>
-<span class="sourceLineNo">097</span>                                if(!VaultHook.isEnabled() || !VaultHook.hasEconomyPlugin()) {<a name="line.97"></a>
-<span class="sourceLineNo">098</span>                                        p.sendMessage(LanguageManager.formatMessage("&amp;cWe did not find any compatible economy plugin in the server. Please contact an adminstrator, as this option does not work without it."));<a name="line.98"></a>
-<span class="sourceLineNo">099</span>                                        p.closeInventory();<a name="line.99"></a>
-<span class="sourceLineNo">100</span>                                        return;<a name="line.100"></a>
-<span class="sourceLineNo">101</span>                                }<a name="line.101"></a>
-<span class="sourceLineNo">102</span>                                p.sendMessage(LanguageManager.getMessage("got-salary", p));<a name="line.102"></a>
-<span class="sourceLineNo">103</span>                                VaultHook.getEconomy().depositPlayer(p, salary);<a name="line.103"></a>
-<span class="sourceLineNo">104</span>                                jp.removeSalary(salary);<a name="line.104"></a>
-<span class="sourceLineNo">105</span>                                p.closeInventory();<a name="line.105"></a>
-<span class="sourceLineNo">106</span>                                return;<a name="line.106"></a>
-<span class="sourceLineNo">107</span>                        }<a name="line.107"></a>
-<span class="sourceLineNo">108</span>                        return;<a name="line.108"></a>
-<span class="sourceLineNo">109</span>                }<a name="line.109"></a>
-<span class="sourceLineNo">110</span>        }<a name="line.110"></a>
-<span class="sourceLineNo">111</span>}<a name="line.111"></a>
+<span class="sourceLineNo">078</span>                        if(action.equalsIgnoreCase("leavejob")) {<a name="line.78"></a>
+<span class="sourceLineNo">079</span>                                jp.removePlayerStats();<a name="line.79"></a>
+<span class="sourceLineNo">080</span>                                p.sendMessage(LanguageManager.getMessage("left-job", p));<a name="line.80"></a>
+<span class="sourceLineNo">081</span>                                p.closeInventory();<a name="line.81"></a>
+<span class="sourceLineNo">082</span>                                return;<a name="line.82"></a>
+<span class="sourceLineNo">083</span>                        }<a name="line.83"></a>
+<span class="sourceLineNo">084</span>                        return;<a name="line.84"></a>
+<span class="sourceLineNo">085</span>                }<a name="line.85"></a>
+<span class="sourceLineNo">086</span>                <a name="line.86"></a>
+<span class="sourceLineNo">087</span>                /*<a name="line.87"></a>
+<span class="sourceLineNo">088</span>                 * Status Work Menu Clicking Event<a name="line.88"></a>
+<span class="sourceLineNo">089</span>                 */<a name="line.89"></a>
+<span class="sourceLineNo">090</span>                if(e.getView().getTitle().equals(FileCreator.getGUI().getString("gui-settings.has-work.title"))) {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                        e.setCancelled(true);<a name="line.91"></a>
+<span class="sourceLineNo">092</span>                        Player p = (Player) e.getWhoClicked();<a name="line.92"></a>
+<span class="sourceLineNo">093</span>                        JobPlayer jp = PicoJobsAPI.getPlayersManager().getJobPlayer(p);<a name="line.93"></a>
+<span class="sourceLineNo">094</span>                        //Job job = jp.getJob();<a name="line.94"></a>
+<span class="sourceLineNo">095</span>                        String action = actionItems.get(e.getCurrentItem());<a name="line.95"></a>
+<span class="sourceLineNo">096</span>                        if(action.equalsIgnoreCase("salary")) {<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                                double salary = jp.getSalary();<a name="line.97"></a>
+<span class="sourceLineNo">098</span>                                if(salary &lt;= 0) {<a name="line.98"></a>
+<span class="sourceLineNo">099</span>                                        p.sendMessage(LanguageManager.getMessage("no-salary", p));<a name="line.99"></a>
+<span class="sourceLineNo">100</span>                                        p.closeInventory();<a name="line.100"></a>
+<span class="sourceLineNo">101</span>                                        return;<a name="line.101"></a>
+<span class="sourceLineNo">102</span>                                }<a name="line.102"></a>
+<span class="sourceLineNo">103</span>                                if(!VaultHook.isEnabled() || !VaultHook.hasEconomyPlugin()) {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>                                        p.sendMessage(LanguageManager.formatMessage("&amp;cWe did not find any compatible economy plugin in the server. Please contact an adminstrator, as this option does not work without it."));<a name="line.104"></a>
+<span class="sourceLineNo">105</span>                                        p.closeInventory();<a name="line.105"></a>
+<span class="sourceLineNo">106</span>                                        return;<a name="line.106"></a>
+<span class="sourceLineNo">107</span>                                }<a name="line.107"></a>
+<span class="sourceLineNo">108</span>                                p.sendMessage(LanguageManager.getMessage("got-salary", p));<a name="line.108"></a>
+<span class="sourceLineNo">109</span>                                VaultHook.getEconomy().depositPlayer(p, salary);<a name="line.109"></a>
+<span class="sourceLineNo">110</span>                                jp.removeSalary(salary);<a name="line.110"></a>
+<span class="sourceLineNo">111</span>                                p.closeInventory();<a name="line.111"></a>
+<span class="sourceLineNo">112</span>                                return;<a name="line.112"></a>
+<span class="sourceLineNo">113</span>                        }<a name="line.113"></a>
+<span class="sourceLineNo">114</span>                        if(action.equalsIgnoreCase("leavejob")) {<a name="line.114"></a>
+<span class="sourceLineNo">115</span>                                jp.removePlayerStats();<a name="line.115"></a>
+<span class="sourceLineNo">116</span>                                p.sendMessage(LanguageManager.getMessage("left-job", p));<a name="line.116"></a>
+<span class="sourceLineNo">117</span>                                p.closeInventory();<a name="line.117"></a>
+<span class="sourceLineNo">118</span>                                return;<a name="line.118"></a>
+<span class="sourceLineNo">119</span>                        }<a name="line.119"></a>
+<span class="sourceLineNo">120</span>                        return;<a name="line.120"></a>
+<span class="sourceLineNo">121</span>                }<a name="line.121"></a>
+<span class="sourceLineNo">122</span>        }<a name="line.122"></a>
+<span class="sourceLineNo">123</span>}<a name="line.123"></a>
 
 
 

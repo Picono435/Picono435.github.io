@@ -33,7 +33,7 @@
 <span class="sourceLineNo">025</span>         */<a name="line.25"></a>
 <span class="sourceLineNo">026</span>        // GENERAL<a name="line.26"></a>
 <span class="sourceLineNo">027</span>        public void getData() {<a name="line.27"></a>
-<span class="sourceLineNo">028</span>                storageMethod = StorageMethod.getStorageMethod(PicoJobsPlugin.getPlugin().getConfig().getConfigurationSection("storage").getString("storage-method"));<a name="line.28"></a>
+<span class="sourceLineNo">028</span>                storageMethod = StorageMethod.getStorageMethod(PicoJobsAPI.getSettingsManager().getStorageMethod());<a name="line.28"></a>
 <span class="sourceLineNo">029</span>                <a name="line.29"></a>
 <span class="sourceLineNo">030</span>                if(storageMethod == StorageMethod.YAML) {<a name="line.30"></a>
 <span class="sourceLineNo">031</span>                        PicoJobsPlugin.sendConsoleMessage(ChatColor.AQUA + "[PicoJobs] Using the YAML storage method.");<a name="line.31"></a>
@@ -100,7 +100,7 @@
 <span class="sourceLineNo">092</span>         */<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        // GENERAL<a name="line.93"></a>
 <span class="sourceLineNo">094</span>        public void saveData(boolean log) {<a name="line.94"></a>
-<span class="sourceLineNo">095</span>                storageMethod = StorageMethod.getStorageMethod(PicoJobsPlugin.getPlugin().getConfig().getConfigurationSection("storage").getString("storage-method"));<a name="line.95"></a>
+<span class="sourceLineNo">095</span>                storageMethod = StorageMethod.getStorageMethod(PicoJobsAPI.getSettingsManager().getStorageMethod());<a name="line.95"></a>
 <span class="sourceLineNo">096</span>                <a name="line.96"></a>
 <span class="sourceLineNo">097</span>                if(storageMethod == StorageMethod.YAML) {<a name="line.97"></a>
 <span class="sourceLineNo">098</span>                        if(log) {<a name="line.98"></a>

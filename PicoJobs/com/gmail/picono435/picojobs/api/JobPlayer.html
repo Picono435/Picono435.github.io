@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -199,43 +199,49 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#removePlayerStats--">removePlayerStats</a></span>()</code>
+<div class="block">Resets completly the player, including the job, if its working the method and etc...</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#removeSalary-double-">removeSalary</a></span>(double&nbsp;salary)</code>
 <div class="block">Removes some salary from the current salary of a player</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#setJob-com.gmail.picono435.picojobs.api.Job-">setJob</a></span>(<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job)</code>
 <div class="block">Sets the job of a player</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#setMethod-double-">setMethod</a></span>(double&nbsp;method)</code>
 <div class="block">Sets the current method (broken blocks, fish caugh etc..) of a player</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#setMethodLevel-double-">setMethodLevel</a></span>(double&nbsp;level)</code>
 <div class="block">Sets the current method level (amount of works done) of a player</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#setSalary-double-">setSalary</a></span>(double&nbsp;salary)</code>
 <div class="block">Sets the current salary of a player</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#setWorking-boolean-">setWorking</a></span>(boolean&nbsp;isWorking)</code>
 <div class="block">Set if the player is working or not</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#simulateEvent--">simulateEvent</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#simulateEvent-com.gmail.picono435.picojobs.api.Type-">simulateEvent</a></span>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>
 <div class="block">Simulates an event, for example it will simulate a caught fish or a break block from the plugin.</div>
 </td>
 </tr>
@@ -464,18 +470,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
-<a name="simulateEvent--">
+<a name="simulateEvent-com.gmail.picono435.picojobs.api.Type-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>simulateEvent</h4>
-<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/JobPlayer.html#line.175">simulateEvent</a>()</pre>
+<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/JobPlayer.html#line.175">simulateEvent</a>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</pre>
 <div class="block">Simulates an event, for example it will simulate a caught fish or a break block from the plugin.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if it will level up, false if not</dd>
 </dl>
+</li>
+</ul>
+<a name="removePlayerStats--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>removePlayerStats</h4>
+<pre>public&nbsp;void&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/JobPlayer.html#line.200">removePlayerStats</a>()</pre>
+<div class="block">Resets completly the player, including the job, if its working the method and etc... but keeps half of the salary</div>
 </li>
 </ul>
 </li>

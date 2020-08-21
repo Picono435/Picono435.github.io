@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.15">LanguageManager</a>
+<pre>public class <a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.17">LanguageManager</a>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
@@ -159,29 +159,41 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html#getCommandAliases-java.lang.String-">getCommandAliases</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cmd)</code>
+<div class="block">Gets a list of all command aliases of a command</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html#getFormat-java.lang.String-org.bukkit.entity.Player-">getFormat</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
          org.bukkit.entity.Player&nbsp;p)</code>
 <div class="block">Gets a message format from the language config file</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html#getMessage-java.lang.String-">getMessage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Get a message from the language file without using player placeholders (PlaceholderAPI)</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html#getMessage-java.lang.String-org.bukkit.entity.Player-">getMessage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
           org.bukkit.entity.Player&nbsp;p)</code>
 <div class="block">Get a message from the language file using player placeholders (PlaceholderAPI)</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html#getPrefix--">getPrefix</a></span>()</code>
 <div class="block">Gets the prefix of the plugin declared on the config</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html#getSubCommandAlias-java.lang.String-">getSubCommandAlias</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;subcmd)</code>
+<div class="block">Gets the alias of a subcmd</div>
 </td>
 </tr>
 </table>
@@ -212,7 +224,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LanguageManager</h4>
-<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.15">LanguageManager</a>()</pre>
+<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.17">LanguageManager</a>()</pre>
 </li>
 </ul>
 </li>
@@ -229,11 +241,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getMessage</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.28">getMessage</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.30">getMessage</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Get a message from the language file without using player placeholders (PlaceholderAPI)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>message</code> - - the message key</dd>
+<dd><code>message</code> - the message key</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted message value</dd>
 </dl>
@@ -245,13 +257,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getMessage</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.45">getMessage</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.47">getMessage</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                                 org.bukkit.entity.Player&nbsp;p)</pre>
 <div class="block">Get a message from the language file using player placeholders (PlaceholderAPI)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>message</code> - - the message key</dd>
-<dd><code>p</code> - - the player</dd>
+<dd><code>message</code> - the message key</dd>
+<dd><code>p</code> - the player</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted message value</dd>
 </dl>
@@ -263,7 +275,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getPrefix</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.60">getPrefix</a>()</pre>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.62">getPrefix</a>()</pre>
 <div class="block">Gets the prefix of the plugin declared on the config</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -277,11 +289,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>formatMessage</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.72">formatMessage</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.74">formatMessage</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Get a message from the language file without using player placeholders (PlaceholderAPI)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>message</code> - - the message</dd>
+<dd><code>message</code> - the message</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted message</dd>
 </dl>
@@ -293,15 +305,47 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getFormat</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.88">getFormat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.90">getFormat</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                                org.bukkit.entity.Player&nbsp;p)</pre>
 <div class="block">Gets a message format from the language config file</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>message</code> - - the message key</dd>
-<dd><code>p</code> - - the player</dd>
+<dd><code>message</code> - the message key</dd>
+<dd><code>p</code> - the player</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted message value</dd>
+</dl>
+</li>
+</ul>
+<a name="getCommandAliases-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommandAliases</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.106">getCommandAliases</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cmd)</pre>
+<div class="block">Gets a list of all command aliases of a command</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cmd</code> - the command</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of aliases</dd>
+</dl>
+</li>
+</ul>
+<a name="getSubCommandAlias-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSubCommandAlias</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.119">getSubCommandAlias</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;subcmd)</pre>
+<div class="block">Gets the alias of a subcmd</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>subcmd</code> - the subcommand</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of aliases</dd>
 </dl>
 </li>
 </ul>
@@ -311,7 +355,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createLanguageFile</h4>
-<pre>public static&nbsp;void&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.102">createLanguageFile</a>()</pre>
+<pre>public static&nbsp;void&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/LanguageManager.html#line.130">createLanguageFile</a>()</pre>
 <div class="block">Creates and saves thew Language Config File</div>
 </li>
 </ul>

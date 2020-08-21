@@ -180,13 +180,13 @@
 <span class="sourceLineNo">172</span>         * @author Picono435<a name="line.172"></a>
 <span class="sourceLineNo">173</span>         *<a name="line.173"></a>
 <span class="sourceLineNo">174</span>         */<a name="line.174"></a>
-<span class="sourceLineNo">175</span>        public boolean simulateEvent() {<a name="line.175"></a>
+<span class="sourceLineNo">175</span>        public boolean simulateEvent(Type type) {<a name="line.175"></a>
 <span class="sourceLineNo">176</span>                if(!isWorking()) return false;<a name="line.176"></a>
 <span class="sourceLineNo">177</span>                double level = getMethodLevel();<a name="line.177"></a>
 <span class="sourceLineNo">178</span>                double method = getMethod();<a name="line.178"></a>
 <span class="sourceLineNo">179</span>                setMethod(method + 1);<a name="line.179"></a>
 <span class="sourceLineNo">180</span>                                <a name="line.180"></a>
-<span class="sourceLineNo">181</span>                int reqmethod = (int) (job.getMethod() * level * PicoJobsAPI.getSettingsManager().getKillsFrequency());<a name="line.181"></a>
+<span class="sourceLineNo">181</span>                int reqmethod = (int) (job.getMethod() * level * PicoJobsAPI.getSettingsManager().getMethodFrequency());<a name="line.181"></a>
 <span class="sourceLineNo">182</span>                <a name="line.182"></a>
 <span class="sourceLineNo">183</span>                if(getMethod() &gt;= reqmethod) {<a name="line.183"></a>
 <span class="sourceLineNo">184</span>                        double salary = job.getSalary() * level * PicoJobsAPI.getSettingsManager().getSalaryFrequency();<a name="line.184"></a>
@@ -198,7 +198,21 @@
 <span class="sourceLineNo">190</span>                }<a name="line.190"></a>
 <span class="sourceLineNo">191</span>                return false;<a name="line.191"></a>
 <span class="sourceLineNo">192</span>        }<a name="line.192"></a>
-<span class="sourceLineNo">193</span>}<a name="line.193"></a>
+<span class="sourceLineNo">193</span>        <a name="line.193"></a>
+<span class="sourceLineNo">194</span>        /**<a name="line.194"></a>
+<span class="sourceLineNo">195</span>         * Resets completly the player, including the job, if its working the method and etc... but keeps half of the salary<a name="line.195"></a>
+<span class="sourceLineNo">196</span>         * <a name="line.196"></a>
+<span class="sourceLineNo">197</span>         * @author Picono435<a name="line.197"></a>
+<span class="sourceLineNo">198</span>         *<a name="line.198"></a>
+<span class="sourceLineNo">199</span>         */<a name="line.199"></a>
+<span class="sourceLineNo">200</span>        public void removePlayerStats() {<a name="line.200"></a>
+<span class="sourceLineNo">201</span>                setWorking(false);<a name="line.201"></a>
+<span class="sourceLineNo">202</span>                setSalary(getSalary() / 2);<a name="line.202"></a>
+<span class="sourceLineNo">203</span>                setMethod(0);<a name="line.203"></a>
+<span class="sourceLineNo">204</span>                setMethodLevel(0);<a name="line.204"></a>
+<span class="sourceLineNo">205</span>                setJob(null);<a name="line.205"></a>
+<span class="sourceLineNo">206</span>        }<a name="line.206"></a>
+<span class="sourceLineNo">207</span>}<a name="line.207"></a>
 
 
 

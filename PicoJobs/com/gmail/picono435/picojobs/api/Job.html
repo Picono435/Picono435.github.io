@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -134,13 +134,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#Job-java.lang.String-java.lang.String-java.lang.String-com.gmail.picono435.picojobs.api.Type-double-double-boolean-int-java.lang.String-int-boolean-java.lang.String-boolean-java.util.List-">Job</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#Job-java.lang.String-java.lang.String-java.lang.String-com.gmail.picono435.picojobs.api.Type-double-double-boolean-double-double-int-java.lang.String-int-boolean-java.lang.String-boolean-java.util.List-">Job</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag,
    <a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type,
    double&nbsp;method,
    double&nbsp;salary,
    boolean&nbsp;requiresPermission,
+   double&nbsp;salaryFrequency,
+   double&nbsp;methodFrequency,
    int&nbsp;slot,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;item,
    int&nbsp;itemData,
@@ -201,48 +203,60 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getMethodFrequency--">getMethodFrequency</a></span>()</code>
+<div class="block">Gets the method frequency of the job</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the name of the job</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getSalary--">getSalary</a></span>()</code>
 <div class="block">Gets the salary of the job</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getSalaryFrequency--">getSalaryFrequency</a></span>()</code>
+<div class="block">Gets the salary frequency of the job</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getSlot--">getSlot</a></span>()</code>
 <div class="block">Gets the item slot</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getTag--">getTag</a></span>()</code>
 <div class="block">Gets the tag of the job</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#getType--">getType</a></span>()</code>
 <div class="block">Gets the type of the job</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#inWhitelist-org.bukkit.Material-">inWhitelist</a></span>(org.bukkit.Material&nbsp;material)</code>
 <div class="block">Checks if a material is in the whitelist, this does not verify if there is a whitelist.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#isEnchanted--">isEnchanted</a></span>()</code>
 <div class="block">Checks if the job item is enchanted or not</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html#requiresPermission--">requiresPermission</a></span>()</code>
 <div class="block">Check if the job requires permission to enter or not</div>
@@ -270,19 +284,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Job-java.lang.String-java.lang.String-java.lang.String-com.gmail.picono435.picojobs.api.Type-double-double-boolean-int-java.lang.String-int-boolean-java.lang.String-boolean-java.util.List-">
+<a name="Job-java.lang.String-java.lang.String-java.lang.String-com.gmail.picono435.picojobs.api.Type-double-double-boolean-double-double-int-java.lang.String-int-boolean-java.lang.String-boolean-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Job</h4>
-<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.42">Job</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.44">Job</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag,
            <a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type,
            double&nbsp;method,
            double&nbsp;salary,
            boolean&nbsp;requiresPermission,
+           double&nbsp;salaryFrequency,
+           double&nbsp;methodFrequency,
            int&nbsp;slot,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;item,
            int&nbsp;itemData,
@@ -306,7 +322,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.74">getName</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.78">getName</a>()</pre>
 <div class="block">Gets the name of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -320,7 +336,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDisplayName</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.84">getDisplayName</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.88">getDisplayName</a>()</pre>
 <div class="block">Gets the display name of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -334,7 +350,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getTag</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.94">getTag</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.98">getTag</a>()</pre>
 <div class="block">Gets the tag of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -348,7 +364,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getType</h4>
-<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.104">getType</a>()</pre>
+<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.108">getType</a>()</pre>
 <div class="block">Gets the type of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -362,7 +378,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getMethod</h4>
-<pre>public&nbsp;double&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.114">getMethod</a>()</pre>
+<pre>public&nbsp;double&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.118">getMethod</a>()</pre>
 <div class="block">Gets the method of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -376,7 +392,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getSalary</h4>
-<pre>public&nbsp;double&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.124">getSalary</a>()</pre>
+<pre>public&nbsp;double&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.128">getSalary</a>()</pre>
 <div class="block">Gets the salary of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -390,11 +406,39 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>requiresPermission</h4>
-<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.134">requiresPermission</a>()</pre>
+<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.138">requiresPermission</a>()</pre>
 <div class="block">Check if the job requires permission to enter or not</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if it requires permission, false if not</dd>
+</dl>
+</li>
+</ul>
+<a name="getSalaryFrequency--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSalaryFrequency</h4>
+<pre>public&nbsp;double&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.148">getSalaryFrequency</a>()</pre>
+<div class="block">Gets the salary frequency of the job</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the salary frequency of the job</dd>
+</dl>
+</li>
+</ul>
+<a name="getMethodFrequency--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMethodFrequency</h4>
+<pre>public&nbsp;double&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.161">getMethodFrequency</a>()</pre>
+<div class="block">Gets the method frequency of the job</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the method frequency of the job</dd>
 </dl>
 </li>
 </ul>
@@ -404,7 +448,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getSlot</h4>
-<pre>public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.144">getSlot</a>()</pre>
+<pre>public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.174">getSlot</a>()</pre>
 <div class="block">Gets the item slot</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -418,7 +462,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getMaterial</h4>
-<pre>public&nbsp;org.bukkit.Material&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.154">getMaterial</a>()</pre>
+<pre>public&nbsp;org.bukkit.Material&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.184">getMaterial</a>()</pre>
 <div class="block">Gets the item material</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -433,7 +477,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getItemData</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.166">getItemData</a>()</pre>
+public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.196">getItemData</a>()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the item data slot</div>
 <dl>
@@ -448,7 +492,7 @@ public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojo
 <ul class="blockList">
 <li class="blockList">
 <h4>isEnchanted</h4>
-<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.176">isEnchanted</a>()</pre>
+<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.206">isEnchanted</a>()</pre>
 <div class="block">Checks if the job item is enchanted or not</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -462,7 +506,7 @@ public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojo
 <ul class="blockList">
 <li class="blockList">
 <h4>getFormattedItem</h4>
-<pre>public&nbsp;org.bukkit.inventory.ItemStack&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.188">getFormattedItem</a>()</pre>
+<pre>public&nbsp;org.bukkit.inventory.ItemStack&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.218">getFormattedItem</a>()</pre>
 <div class="block">Gets the formatted item of the job</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -476,7 +520,7 @@ public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojo
 <ul class="blockList">
 <li class="blockList">
 <h4>getKillJob</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.212">getKillJob</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.242">getKillJob</a>()</pre>
 <div class="block">Gets the job that needs to be killed. This does not verify if its a KILL job type, it will return an empty string if there is no kill job.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -490,7 +534,7 @@ public&nbsp;int&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojo
 <ul class="blockListLast">
 <li class="blockList">
 <h4>inWhitelist</h4>
-<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.223">inWhitelist</a>(org.bukkit.Material&nbsp;material)</pre>
+<pre>public&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/Job.html#line.253">inWhitelist</a>(org.bukkit.Material&nbsp;material)</pre>
 <div class="block">Checks if a material is in the whitelist, this does not verify if there is a whitelist.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

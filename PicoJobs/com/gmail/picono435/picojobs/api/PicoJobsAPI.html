@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.16">PicoJobsAPI</a>
+<pre>public class <a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.18">PicoJobsAPI</a>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Represents the API from PicoJobs plugin</div>
 <dl>
@@ -181,6 +181,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Use this method to get the StorageManager of the plugin, with it you can save and delete data of the plugin.</div>
 </td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/api/PicoJobsAPI.html#registerEconomy-com.gmail.picono435.picojobs.api.EconomyImplementation-">registerEconomy</a></span>(<a href="../../../../../com/gmail/picono435/picojobs/api/EconomyImplementation.html" title="class in com.gmail.picono435.picojobs.api">EconomyImplementation</a>&nbsp;economy)</code>
+<div class="block">Registers a Economy Implementation</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -209,7 +215,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PicoJobsAPI</h4>
-<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.16">PicoJobsAPI</a>()</pre>
+<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.18">PicoJobsAPI</a>()</pre>
 </li>
 </ul>
 </li>
@@ -226,7 +232,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getJobsManager</h4>
-<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html" title="class in com.gmail.picono435.picojobs.managers">JobsManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.30">getJobsManager</a>()</pre>
+<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html" title="class in com.gmail.picono435.picojobs.managers">JobsManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.32">getJobsManager</a>()</pre>
 <div class="block">Use this method to get the JobsManager of the plugin, with it you can edit/get most of the things of a job.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -240,7 +246,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlayersManager</h4>
-<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/PlayersManager.html" title="class in com.gmail.picono435.picojobs.managers">PlayersManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.40">getPlayersManager</a>()</pre>
+<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/PlayersManager.html" title="class in com.gmail.picono435.picojobs.managers">PlayersManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.42">getPlayersManager</a>()</pre>
 <div class="block">Use this method to get the PlayersManager of the plugin, with it you can edit and get most of the data of a player.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -254,7 +260,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getLanguageManager</h4>
-<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html" title="class in com.gmail.picono435.picojobs.managers">LanguageManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.50">getLanguageManager</a>()</pre>
+<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/LanguageManager.html" title="class in com.gmail.picono435.picojobs.managers">LanguageManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.52">getLanguageManager</a>()</pre>
 <div class="block">Use this method to get the LanguageManager of the plugin, with it you can get all the messages of the plugin.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -268,7 +274,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getSettingsManager</h4>
-<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/SettingsManager.html" title="class in com.gmail.picono435.picojobs.managers">SettingsManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.60">getSettingsManager</a>()</pre>
+<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/SettingsManager.html" title="class in com.gmail.picono435.picojobs.managers">SettingsManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.62">getSettingsManager</a>()</pre>
 <div class="block">Use this method to get the SettingsManager of the plugin, with it you can access some configurations of the plugin.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -279,14 +285,30 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="getStorageManager--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getStorageManager</h4>
-<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/StorageManager.html" title="class in com.gmail.picono435.picojobs.managers">StorageManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.70">getStorageManager</a>()</pre>
+<pre>public static&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/managers/StorageManager.html" title="class in com.gmail.picono435.picojobs.managers">StorageManager</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.72">getStorageManager</a>()</pre>
 <div class="block">Use this method to get the StorageManager of the plugin, with it you can save and delete data of the plugin.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The storage manager of the plugin</dd>
+</dl>
+</li>
+</ul>
+<a name="registerEconomy-com.gmail.picono435.picojobs.api.EconomyImplementation-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>registerEconomy</h4>
+<pre>public static&nbsp;boolean&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/api/PicoJobsAPI.html#line.83">registerEconomy</a>(<a href="../../../../../com/gmail/picono435/picojobs/api/EconomyImplementation.html" title="class in com.gmail.picono435.picojobs.api">EconomyImplementation</a>&nbsp;economy)</pre>
+<div class="block">Registers a Economy Implementation</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>economy</code> - the economy implementation</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether is successful or not</dd>
 </dl>
 </li>
 </ul>

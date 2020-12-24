@@ -91,6 +91,10 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#com.gmail.picono435.picojobs.events">com.gmail.picono435.picojobs.events</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#com.gmail.picono435.picojobs.managers">com.gmail.picono435.picojobs.managers</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -111,7 +115,7 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">PicoJobsPlugin.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/PicoJobsPlugin.html#jobs">jobs</a></span></code>&nbsp;</td>
 </tr>
 </tbody>
@@ -144,6 +148,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Job.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html#inWhitelist-com.gmail.picono435.picojobs.api.Job-">inWhitelist</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job)</code>
+<div class="block">Checks if a job is in the whitelist</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">JobPlayer.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#setJob-com.gmail.picono435.picojobs.api.Job-">setJob</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job)</code>
 <div class="block">Sets the job of a player</div>
@@ -158,11 +168,78 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#JobPlayer-com.gmail.picono435.picojobs.api.Job-double-double-double-boolean-">JobPlayer</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#JobPlayer-com.gmail.picono435.picojobs.api.Job-double-double-double-boolean-java.util.UUID-">JobPlayer</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job,
          double&nbsp;method,
          double&nbsp;level,
          double&nbsp;salary,
-         boolean&nbsp;isWorking)</code>&nbsp;</td>
+         boolean&nbsp;isWorking,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.gmail.picono435.picojobs.events">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a> in <a href="../../../../../../com/gmail/picono435/picojobs/events/package-summary.html">com.gmail.picono435.picojobs.events</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../com/gmail/picono435/picojobs/events/package-summary.html">com.gmail.picono435.picojobs.events</a> that return <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PlayerEnterJobEvent.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerEnterJobEvent.html#getJob--">getJob</a></span>()</code>
+<div class="block">Gets the new job of the player in this event</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PlayerFinishWorkEvent.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerFinishWorkEvent.html#getJob--">getJob</a></span>()</code>
+<div class="block">Gets the job of the player in this event</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PlayerStartWorkEvent.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerStartWorkEvent.html#getJob--">getJob</a></span>()</code>
+<div class="block">Gets the job of the player in this event</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PlayerLeaveJobEvent.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerLeaveJobEvent.html#getOldJob--">getOldJob</a></span>()</code>
+<div class="block">Gets the old job of the player</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../../com/gmail/picono435/picojobs/events/package-summary.html">com.gmail.picono435.picojobs.events</a> with parameters of type <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerEnterJobEvent.html#PlayerEnterJobEvent-com.gmail.picono435.picojobs.api.JobPlayer-org.bukkit.entity.Player-com.gmail.picono435.picojobs.api.Job-">PlayerEnterJobEvent</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html" title="class in com.gmail.picono435.picojobs.api">JobPlayer</a>&nbsp;jobPlayer,
+                   org.bukkit.entity.Player&nbsp;player,
+                   <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerFinishWorkEvent.html#PlayerFinishWorkEvent-com.gmail.picono435.picojobs.api.JobPlayer-org.bukkit.entity.Player-com.gmail.picono435.picojobs.api.Job-">PlayerFinishWorkEvent</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html" title="class in com.gmail.picono435.picojobs.api">JobPlayer</a>&nbsp;jobPlayer,
+                     org.bukkit.entity.Player&nbsp;player,
+                     <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerLeaveJobEvent.html#PlayerLeaveJobEvent-com.gmail.picono435.picojobs.api.JobPlayer-org.bukkit.entity.Player-com.gmail.picono435.picojobs.api.Job-">PlayerLeaveJobEvent</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html" title="class in com.gmail.picono435.picojobs.api">JobPlayer</a>&nbsp;jobPlayer,
+                   org.bukkit.entity.Player&nbsp;player,
+                   <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;oldJob)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/events/PlayerStartWorkEvent.html#PlayerStartWorkEvent-com.gmail.picono435.picojobs.api.JobPlayer-org.bukkit.entity.Player-com.gmail.picono435.picojobs.api.Job-">PlayerStartWorkEvent</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html" title="class in com.gmail.picono435.picojobs.api">JobPlayer</a>&nbsp;jobPlayer,
+                    org.bukkit.entity.Player&nbsp;player,
+                    <a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;job)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -188,6 +265,12 @@
 <td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
 <td class="colLast"><span class="typeNameLabel">JobsManager.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getJobByDisplayname-java.lang.String-">getJobByDisplayname</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</code>
 <div class="block">Gets a job with job displayname</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JobsManager.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getJobByStrippedColorDisplayname-java.lang.String-">getJobByStrippedColorDisplayname</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</code>
+<div class="block">Gets a job with stripped color job displayname</div>
 </td>
 </tr>
 </tbody>

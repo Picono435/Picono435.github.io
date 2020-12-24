@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.8">JobsManager</a>
+<pre>public class <a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.12">JobsManager</a>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
@@ -149,18 +149,36 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getConfigMethod-com.gmail.picono435.picojobs.api.Type-">getConfigMethod</a></span>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../com/gmail/picono435/picojobs/api/WhitelistConf.html" title="enum in com.gmail.picono435.picojobs.api">WhitelistConf</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getConfigWhitelist-com.gmail.picono435.picojobs.api.Type-">getConfigWhitelist</a></span>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getConfigWhitelistString-com.gmail.picono435.picojobs.api.Type-">getConfigWhitelistString</a></span>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getJob-java.lang.String-">getJob</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;jobname)</code>
 <div class="block">Gets a job with jobname</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getJobByDisplayname-java.lang.String-">getJobByDisplayname</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</code>
 <div class="block">Gets a job with job displayname</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getJobByStrippedColorDisplayname-java.lang.String-">getJobByStrippedColorDisplayname</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</code>
+<div class="block">Gets a job with stripped color job displayname</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getJobs--">getJobs</a></span>()</code>
 <div class="block">Gets all the jobs</div>
@@ -194,7 +212,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JobsManager</h4>
-<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.19">JobsManager</a>(<a href="../../../../../com/gmail/picono435/picojobs/PicoJobsPlugin.html" title="class in com.gmail.picono435.picojobs">PicoJobsPlugin</a>&nbsp;main)</pre>
+<pre>public&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.23">JobsManager</a>(<a href="../../../../../com/gmail/picono435/picojobs/PicoJobsPlugin.html" title="class in com.gmail.picono435.picojobs">PicoJobsPlugin</a>&nbsp;main)</pre>
 <div class="block">Create the manager of jobs, with it you can change everything of jobs.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -216,7 +234,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getJob</h4>
-<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.30">getJob</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;jobname)</pre>
+<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.34">getJob</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;jobname)</pre>
 <div class="block">Gets a job with jobname</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -232,8 +250,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getJobByDisplayname</h4>
-<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.44">getJobByDisplayname</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</pre>
+<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.48">getJobByDisplayname</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</pre>
 <div class="block">Gets a job with job displayname</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>displayname</code> - - the job display name</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the job</dd>
+</dl>
+</li>
+</ul>
+<a name="getJobByStrippedColorDisplayname-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJobByStrippedColorDisplayname</h4>
+<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.64">getJobByStrippedColorDisplayname</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname)</pre>
+<div class="block">Gets a job with stripped color job displayname</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>displayname</code> - - the job display name</dd>
@@ -245,15 +279,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="getJobs--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getJobs</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&gt;&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.59">getJobs</a>()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../com/gmail/picono435/picojobs/api/Job.html" title="class in com.gmail.picono435.picojobs.api">Job</a>&gt;&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.79">getJobs</a>()</pre>
 <div class="block">Gets all the jobs</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>all the jobs</dd>
 </dl>
+</li>
+</ul>
+<a name="getConfigMethod-com.gmail.picono435.picojobs.api.Type-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfigMethod</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.83">getConfigMethod</a>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</pre>
+</li>
+</ul>
+<a name="getConfigWhitelistString-com.gmail.picono435.picojobs.api.Type-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfigWhitelistString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.106">getConfigWhitelistString</a>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</pre>
+</li>
+</ul>
+<a name="getConfigWhitelist-com.gmail.picono435.picojobs.api.Type-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getConfigWhitelist</h4>
+<pre>public&nbsp;<a href="../../../../../com/gmail/picono435/picojobs/api/WhitelistConf.html" title="enum in com.gmail.picono435.picojobs.api">WhitelistConf</a>&nbsp;<a href="../../../../../src-html/com/gmail/picono435/picojobs/managers/JobsManager.html#line.122">getConfigWhitelist</a>(<a href="../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</pre>
 </li>
 </ul>
 </li>

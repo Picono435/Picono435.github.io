@@ -1,7 +1,10 @@
 com.gmail.picono435.picojobs
 com.gmail.picono435.picojobs.api
 com.gmail.picono435.picojobs.commands
+com.gmail.picono435.picojobs.events
 com.gmail.picono435.picojobs.hooks
+com.gmail.picono435.picojobs.hooks.economy
+com.gmail.picono435.picojobs.hooks.expansions
 com.gmail.picono435.picojobs.listeners
 com.gmail.picono435.picojobs.listeners.jobs
 com.gmail.picono435.picojobs.managers

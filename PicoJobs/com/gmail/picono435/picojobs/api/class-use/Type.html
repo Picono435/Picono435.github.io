@@ -86,6 +86,10 @@
 <td class="colFirst"><a href="#com.gmail.picono435.picojobs.api">com.gmail.picono435.picojobs.api</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.gmail.picono435.picojobs.managers">com.gmail.picono435.picojobs.managers</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -135,6 +139,14 @@ the order they are declared.</div>
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">Job.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html#setType-com.gmail.picono435.picojobs.api.Type-">setType</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>
+<div class="block">Sets the type of the job
+ 
+ This will save jobs.yml config in order to change in the configuration.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">JobPlayer.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/JobPlayer.html#simulateEvent-com.gmail.picono435.picojobs.api.Type-">simulateEvent</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>
 <div class="block">Simulates an event, for example it will simulate a caught fish or a break block from the plugin.</div>
@@ -149,7 +161,7 @@ the order they are declared.</div>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html#Job-java.lang.String-java.lang.String-java.lang.String-com.gmail.picono435.picojobs.api.Type-double-double-boolean-double-double-int-java.lang.String-int-boolean-java.lang.String-boolean-java.util.List-">Job</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/api/Job.html#Job-java.lang.String-java.lang.String-java.lang.String-com.gmail.picono435.picojobs.api.Type-double-double-boolean-double-double-java.lang.String-java.lang.String-int-java.lang.String-int-boolean-boolean-java.util.List-">Job</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayname,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tag,
    <a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type,
@@ -158,13 +170,40 @@ the order they are declared.</div>
    boolean&nbsp;requiresPermission,
    double&nbsp;salaryFrequency,
    double&nbsp;methodFrequency,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;economy,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;workMessage,
    int&nbsp;slot,
    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;item,
    int&nbsp;itemData,
    boolean&nbsp;enchanted,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;killJob,
    boolean&nbsp;useWhitelist,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;blockWhitelist)</code>&nbsp;</td>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;whitelist)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.gmail.picono435.picojobs.managers">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a> in <a href="../../../../../../com/gmail/picono435/picojobs/managers/package-summary.html">com.gmail.picono435.picojobs.managers</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../com/gmail/picono435/picojobs/managers/package-summary.html">com.gmail.picono435.picojobs.managers</a> with parameters of type <a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JobsManager.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getConfigMethod-com.gmail.picono435.picojobs.api.Type-">getConfigMethod</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/gmail/picono435/picojobs/api/WhitelistConf.html" title="enum in com.gmail.picono435.picojobs.api">WhitelistConf</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JobsManager.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getConfigWhitelist-com.gmail.picono435.picojobs.api.Type-">getConfigWhitelist</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JobsManager.</span><code><span class="memberNameLink"><a href="../../../../../../com/gmail/picono435/picojobs/managers/JobsManager.html#getConfigWhitelistString-com.gmail.picono435.picojobs.api.Type-">getConfigWhitelistString</a></span>(<a href="../../../../../../com/gmail/picono435/picojobs/api/Type.html" title="enum in com.gmail.picono435.picojobs.api">Type</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
